@@ -1,5 +1,5 @@
-export default {
-  multiply(a: number, b: number) {
-    return Promise.resolve(a * b);
-  },
-};
+import { colors } from './theme';
+import { Typography } from './base';
+
+export { colors, Typography };
+export default { colors, Typography };
