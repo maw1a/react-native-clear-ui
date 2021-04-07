@@ -37,7 +37,7 @@
     "android"
   ],
   "repository": "https://github.com/maw1a/react-native-clear-ui",
-  "author": "maw1a <ahmedmawia.dev@gmail.com> <ahmedmawia.dev@gmail.com> (https://github.com/maw1a)",
+  "author": "maw1a <ahmedmawia.dev@gmail.com> (https://github.com/maw1a)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maw1a/react-native-clear-ui/issues"
@@ -149,5 +149,6 @@
         }
       ]
     ]
-  }
+  },
+  "dependencies": {}
 }
