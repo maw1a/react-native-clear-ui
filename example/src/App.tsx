@@ -4,16 +4,10 @@ import { StyleSheet, View } from 'react-native';
 import ClearUi, { Typography } from 'react-native-clear-ui';
 
 export default function App() {
-  const [color, setColor] = React.useState<string | undefined>();
-  React.useEffect(() => {
-    setColor(ClearUi.colors.primary1);
-  }, []);
-
   return (
-    <View style={{ ...styles.container, backgroundColor: color }}>
-      <Typography.Text size="xxl" color="secondary" weight="bold">
-        {color}
-      </Typography.Text>
+    <View style={styles.container}>
+      <Typography.Text size="sm">Secondary</Typography.Text>
+      <Typography.Heading level={3}>Secondary</Typography.Heading>
     </View>
   );
 }

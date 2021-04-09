@@ -8,6 +8,14 @@ const ColorStyles: StyleSheetInterface = StyleSheet.create({
   secondary: { color: constants.colors.secondary1 },
 });
 
+const LevelStyles: StyleSheetInterface = StyleSheet.create({
+  1: { fontSize: 38 },
+  2: { fontSize: 30 },
+  3: { fontSize: 24 },
+  4: { fontSize: 20 },
+  5: { fontSize: 16 },
+});
+
 const SizeStyles: StyleSheetInterface = StyleSheet.create({
   xs: { fontSize: 14 },
   sm: { fontSize: 16 },
@@ -19,12 +27,14 @@ const SizeStyles: StyleSheetInterface = StyleSheet.create({
 
 const DefaultStyle: StyleSheetInterface = StyleSheet.create({
   text: { fontSize: 16, fontWeight: '400', color: '#000' },
+  heading: { fontWeight: 'bold', color: '#000' },
 });
 
 const TypographyStyles = {
   DefaultStyle,
   ColorStyles,
   SizeStyles,
+  LevelStyles,
 };
 
 export default TypographyStyles;
