@@ -1,16 +1,19 @@
 import * as React from 'react';
 
-import { StyleSheet, View } from 'react-native';
-import ClearUi, { Typography, Container } from 'react-native-clear-ui';
+import { StyleSheet } from 'react-native';
+import ClearUi, { Typography, Container, Card } from 'react-native-clear-ui';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Container>
+    <Container style={styles.container}>
+      <Card
+        title={'Title'}
+        extra={<Typography.Text>Extra Content</Typography.Text>}
+      >
         <Typography.Text color="primary" size="md">
           Primary
         </Typography.Text>
-        <Typography.Heading level={3} color="secondary">
+        <Typography.Heading level={1} color="secondary">
           Secondary
         </Typography.Heading>
         <Typography.Link
@@ -20,15 +23,14 @@ export default function App() {
         >
           Link
         </Typography.Link>
-      </Container>
-    </View>
+      </Card>
+    </Container>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
   },

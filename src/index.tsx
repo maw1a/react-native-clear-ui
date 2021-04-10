@@ -1,5 +1,5 @@
 import { colors } from './theme';
-import { Typography, Container } from './base';
+import { Typography, Container, Card } from './base';
 
-export { colors, Typography, Container };
-export default { colors, Typography, Container };
+export { colors, Typography, Container, Card };
+export default { colors, Typography, Container, Card };

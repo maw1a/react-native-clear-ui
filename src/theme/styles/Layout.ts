@@ -1,10 +1,28 @@
 import { StyleSheet } from 'react-native';
-// import constants from '../constants';
+import constants from '../constants';
 
 type StyleSheetInterface = { [key: string]: any };
 
 const DefaultStyle: StyleSheetInterface = StyleSheet.create({
   container: { alignSelf: 'stretch' },
+  card: {
+    margin: 14,
+    borderWidth: 1,
+    borderRadius: 8,
+    borderColor: constants.colors.tertiary1,
+    backgroundColor: '#fff',
+  },
+  card_body: { padding: 16 },
+  card_top: {
+    padding: 16,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: constants.colors.tertiary1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  card_title: { alignSelf: 'flex-start' },
+  card_extra: { alignSelf: 'flex-end' },
 });
 
 const MarginStyleMap = (margin: string | number | string[] | number[]) => {
