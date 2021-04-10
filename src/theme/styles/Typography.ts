@@ -28,6 +28,10 @@ const SizeStyles: StyleSheetInterface = StyleSheet.create({
 const DefaultStyle: StyleSheetInterface = StyleSheet.create({
   text: { fontSize: 16, fontWeight: '400', color: '#000' },
   heading: { fontWeight: 'bold', color: '#000' },
+  link: {
+    color: '#1890ff',
+    textDecorationStyle: 'solid',
+  },
 });
 
 const TypographyStyles = {
