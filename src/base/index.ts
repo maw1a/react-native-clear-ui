@@ -1,3 +1,4 @@
 import Typography from './Typography';
+import Container from './Layout/Container';
 
-export { Typography };
+export { Typography, Container };
