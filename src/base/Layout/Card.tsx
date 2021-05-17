@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ViewStyle } from 'react-native';
+import { TextStyle, View, ViewStyle } from 'react-native';
 import Typography from '../Typography';
 import styles from '../../theme/styles';
 const { LayoutStyles } = styles;
@@ -8,6 +8,9 @@ interface Props {
   children?: React.ReactNode;
   style?: ViewStyle;
   title?: React.ReactNode;
+  titleStyle?: TextStyle;
+  titleLevel?: 1 | 2 | 3 | 4 | 5;
+  titleColor?: 'primary' | 'secondary';
   extra?: React.ReactNode;
 }
 
@@ -19,7 +22,11 @@ const ClrCard: React.FC<Props> = (props) => {
         <View style={{ ...LayoutStyles.DefaultStyle.card_top }}>
           <View style={{ ...LayoutStyles.DefaultStyle.card_title }}>
             {typeof props.title === 'string' ? (
-              <Typography.Heading level={4} color="primary">
+              <Typography.Heading
+                level={props.titleLevel || 4}
+                color={props.titleColor}
+                style={{ ...props.titleStyle }}
+              >
                 {props.title}
               </Typography.Heading>
             ) : (

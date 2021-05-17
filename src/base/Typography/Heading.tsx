@@ -6,8 +6,8 @@ const { TypographyStyles } = styles;
 interface Props {
   children?: React.ReactNode;
   style?: TextStyle;
-  color?: string;
-  level?: number;
+  color?: 'primary' | 'secondary';
+  level?: 1 | 2 | 3 | 4 | 5;
 }
 
 const ClrHeading: React.FC<Props> = (props) => {

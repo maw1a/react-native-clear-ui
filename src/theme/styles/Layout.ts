@@ -22,7 +22,7 @@ const DefaultStyle: StyleSheetInterface = StyleSheet.create({
     justifyContent: 'space-between',
   },
   card_title: { alignSelf: 'flex-start' },
-  card_extra: { alignSelf: 'flex-end' },
+  card_extra: { alignSelf: 'flex-end', marginLeft: 8 },
 });
 
 const MarginStyleMap = (margin: string | number | string[] | number[]) => {
